@@ -1,0 +1,176 @@
+@use 'variables'
+@use 'mixins'
+
+/*Geral*/
+#contactos
+    height: 80vh
+    scroll-snap-align: start
+    position: relative
+
+    h2
+        padding-bottom: 3vh
+
+#contactsFinal
+    position: absolute
+    bottom: 2vh
+
+//Mensagem    
+#mensagem
+    display: none
+
+#mensagem.showMsg
+    display: block
+    width: 50vw
+    margin: auto
+
+//Botoes Email e Telefone
+#ContactBtnContainer
+    display: flex
+    justify-content: space-evenly
+    margin-top: 7vh
+    margin-bottom: 5vh
+    
+    button
+        margin: 0vh
+
+#localizacao
+    text-align: center
+    margin: 10vh auto
+
+//Redes Sociais
+#SocialNetworks
+    width: 50vw
+    margin: 30px auto
+    display: flex
+    justify-content: space-evenly
+
+#Linkedin
+    color: #0072b1
+
+#Instagram
+    color: #bc2a8d
+
+/*Dark Mode*/
+ #dark #Github
+    color: variables.$Cor2
+
+/*Light Mode*/
+ #light #Github
+    color: variables.$Cor1
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1500px )
+    #ContactBtnContainer
+        button
+            font-size: 4vw !important
+
+    #SocialNetworks
+        a
+            font-size: 4.5vw !important
+
+    #localizacao
+        font-size: 2vw
+
+@media screen and (min-width: 1501px) and (min-aspect-ratio: 16/9) /* meu pc*/
+    #ContactBtnContainer
+        button
+            font-size: 2vw
+
+    #SocialNetworks
+        a
+            font-size: 4.5vw !important
+
+    #localizacao
+        font-size: 2vw
+
+@media( min-width: 1501px) and (max-aspect-ratio: 8/5) /* pc com mais altura*/
+    #ContactBtnContainer
+        button
+            font-size: 2vw
+
+    #SocialNetworks
+        a
+            font-size: 4.5vw
+
+    #localizacao
+        font-size: 2vw
+
+
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:800px )
+    #mensagem.showMsg
+        text-align: center
+        margin-top: 4vh
+        font-size: 3vw
+
+    #ContactBtnContainer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 6vh auto 2vh 2vw
+
+        button
+            font-size: 4vw 
+            margin: 2vh 0
+            height: 8vh
+
+    #localizacao
+        font-size: 3.5vw
+
+    #SocialNetworks
+        width: 100vw
+        a
+            font-size: 5.3vw
+
+
+
+@media( min-width: 801px) and (max-width:1028px )
+    #ContactBtnContainer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 9vh auto 2vh 2vw
+
+        button
+            font-size: 4vw 
+            margin: 2vh 0
+            height: 7vh
+
+    #mensagem.showMsg
+        text-align: center
+        font-size: 3.5vw 
+        margin-top: 4vh
+
+    #localizacao
+        font-size: 5vw
+
+    #SocialNetworks
+        width: 100vw
+        a
+            font-size: 8vw
+
+/*Para Telemovel*/
+@media( max-width:450px )
+    #ContactBtnContainer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 9vh auto 2vh 2vw
+
+        button
+            font-size: 4vw 
+
+    #mensagem.showMsg
+        text-align: center
+        font-size: 3.5vw 
+        margin-top: 4vh
+
+    #localizacao
+        font-size: 5vw
+
+    #SocialNetworks
+        width: 100vw
+        a
+            font-size: 8vw
+
+

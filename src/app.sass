@@ -1,0 +1,229 @@
+@use '../src/components/variables'
+@use '../src/components/mixins'
+
+/*Geral*/
+*
+    padding: 0
+    margin: 0
+    font-family: variables.$LetraPrincipal
+    overflow-x: hidden
+
+body
+    width: 100%
+
+#containerMain
+    height: 80vh
+
+a
+    color: inherit
+    text-decoration: none
+
+.titulo
+    @include mixins.Titulo
+
+.tituloPagina
+    @include mixins.TituloPagina
+
+//Formatação scrollbar
+::-webkit-scrollbar
+    width: 15px
+
+::-webkit-scrollbar-track
+    background: variables.$Cor1
+
+::-webkit-scrollbar-thumb
+    background: variables.$Cor4
+
+::-webkit-scrollbar-thumb:hover
+    background: variables.$Cor3
+
+/*Dark Mode*/
+#dark body
+    background-color: variables.$Cor1
+
+#dark header
+    background-color: variables.$Cor1
+
+#dark #containerMain
+    background-color: variables.$Cor1
+    color: variables.$Cor2
+
+#dark .Btn
+    @include mixins.BtnDark
+
+#dark .Btn:hover
+    @include mixins.BtnHoverDark
+
+/*Light Mode*/
+#light #containerMain
+    background-color: variables.$Cor2
+    color: variables.$Cor1
+
+#light  header
+    background-color: variables.$Cor2
+
+#light .Btn
+    @include mixins.BtnLight
+
+#light .Btn:hover
+    @include mixins.BtnHoverLight
+
+#light body
+    background-color: variables.$Cor2
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1501px )
+    p
+        font-size: 1.3vw
+        text-align: center
+
+    h1
+        font-size: 2.5vw
+
+    h2
+        font-size: 1.9vw
+        text-align: center
+
+    li
+        font-size: 1.8vw
+
+    .tituloPagina
+        font-size: 3.3vw
+
+    .titulo
+        font-size: 2.2vw
+        margin: 0
+        padding: 0
+
+    #SocialNetworks
+        a
+            font-size: 4vw !important    
+
+    #ContactBtnContainer
+    button
+        font-size: 1.8vw !important
+    a
+        font-size: 2vw
+        padding: 6px
+
+@media screen and (min-width: 1501px) and (min-aspect-ratio: 16/9) /* meu pc*/
+    #ContactBtnContainer
+        button
+            font-size: 1.2vw
+
+    #SocialNetworks
+        a
+            font-size: 2.5vw !important
+
+    #localizacao
+        font-size: 2vw
+
+
+@media( min-width: 1501px)
+    p
+        font-size: 0.9vw
+        text-align: center
+
+    h1
+        font-size: 2vw
+
+    h2
+        font-size: 1.6vw
+        text-align: center
+
+    li
+        font-size: 1.6vw
+
+    .tituloPagina
+        font-size: 2vw
+
+    .titulo
+        font-size: 2vw
+        margin: 0
+        padding: 0
+
+    a
+        font-size: 1.1vw
+        padding: 6px
+
+
+
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:801px )
+    p
+        font-size: 2.5vw
+        text-align: center
+
+    h1
+        font-size: 3.3vw
+
+    h2
+        font-size: 2.5vw
+        text-align: center
+
+    li
+        font-size: 2.3vw
+
+    .tituloPagina
+        font-size: 5vw
+    
+    .titulo
+        font-size: 3.6vw
+        margin: 0
+        padding: 0
+
+    a
+        font-size: 2.3vw
+        padding: 6px
+
+@media( min-width: 801px) and (max-width:1028px )
+    p
+        font-size: 1.7vw
+        text-align: center
+
+    h1
+        font-size: 3.3vw
+
+    h2
+        font-size: 2.5vw
+        text-align: center
+
+    li
+        font-size: 2.3vw
+
+    .tituloPagina
+        font-size: 3vw
+
+    .titulo
+        font-size: 2.8vw
+        margin: 1vh
+        padding: 0
+
+    a
+        font-size: 2vw
+        padding: 6px
+
+/*Para Telemovel*/
+@media( max-width:451px )
+    p
+        font-size: 2.5vw
+        text-align: center
+
+    h1
+        font-size: 3.5vw
+
+    h2
+        font-size: 2.6vw
+        text-align: center
+
+    li
+        font-size: 2.3vw
+
+    .tituloPagina
+        font-size: 5vw
+    
+    .titulo
+        font-size: 3.5vw
+
+    a
+        font-size: 3vw

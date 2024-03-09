@@ -1,0 +1,74 @@
+@use '../mixins'
+@use '../variables'
+
+/*Geral*/
+#containerProjectGeral
+    height: 78vh
+    padding-top: 2vh
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+#dark #containerProjectGeral
+    background-color: variables.$Cor1
+    color: variables.$Cor2
+
+#light #containerProjectGeral
+    background-color: variables.$Cor2
+    color: variables.$Cor1
+
+#back
+    color: variables.$Cor2
+    cursor: pointer
+    position: absolute
+    z-index: 10
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1500px )
+    #containerProjectGeral
+        justify-content: space-evenly
+
+    #back
+        font-size: 4.2vw
+        right: 1vw
+        top: calc(20vh - 1vw - 4.2vw)
+
+@media( min-width: 1501px) 
+    #back
+        font-size: 3.7vw
+        right: 1vw
+        top: calc(20vh - 1vw - 3.7vw)
+
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:800px )
+    #containerProjectGeral
+        justify-content: center
+        gap: 9vw    
+
+    #back
+        font-size: 8vw
+        right: 3vw
+        top: calc(20vh - 3vw - 8vw)
+
+@media( min-width: 801px) and (max-width:1028px )
+    #containerProjectGeral
+        justify-content: center
+        gap: 9vw    
+    
+    #back
+        font-size: 7vw
+        right: 3vw
+        top: calc(20vh - 3vw - 7vw)
+
+/*Para Telemovel*/
+@media( max-width:450px )
+    #containerProjectGeral
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr))
+        grid-gap: 2vw
+
+    #back
+        font-size: 10vw
+        right: 3vw
+        top: calc(20vh - 3vw - 10vw)
+        

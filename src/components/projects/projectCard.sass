@@ -1,0 +1,258 @@
+@use '../variables'
+@use '../mixins'
+
+/*Geral*/
+.projectCard
+    display: grid
+    grid-template-columns: 35vw 60vw
+    grid-template-rows: auto
+    justify-content: center
+    gap: 2vw
+    align-items: center
+    height: 80vh
+    margin-bottom: 5vh
+    scroll-snap-align: start
+    margin-top: -8vh
+    width: 100vw
+
+//pagina individual de projecto
+.individual
+    padding-top: 5vh !important
+    height: 75vh !important
+    overflow: none !important
+    margin-bottom: 0 !important
+
+#conteudo
+    grid-area: 1/1/2/2
+    align-self: top
+    width: 35vw
+
+    .titulo
+        text-align: center
+
+    p
+        display: block
+        margin: auto
+        padding: 5px
+
+    #descricaoProjecto
+        width: 30vw
+
+    #tecUsada
+        display: flex
+        list-style: none
+        justify-content: center
+
+    button
+        display: block
+        margin: auto
+
+#frames
+    grid-area: 1/2/2/3
+    display: flex
+    justify-content: center
+    align-content: center
+    position: relative
+    background: url(../../assets/iframes/laptop.png) no-repeat
+    background-size: min(60vw, 990px) auto
+    background-position: center
+    height: 0
+    padding-top: 54.35%
+
+    iframe
+        position: absolute
+        left: 50%
+        top: 50%
+        translate: (-50.2% -55.7%)
+        width: min(39.5vw, 652px)
+        height: 77.5%
+
+#dark .projectCard  
+    background-color: variables.$Cor1
+    margin-top: 0.05vh
+    color: variables.$Cor2
+
+#light .projectCard
+    background-color: variables.$Cor2
+    margin-top: 0.05vh
+    color: variables.$Cor1
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1500px )
+    #conteudo
+        .titulo
+            margin:2vh 0
+        p
+            margin-bottom: 2.5vh
+
+        #descricaoProjecto
+            width: 30vw
+
+        #tecUsada
+            li
+                font-size: 2.7vw
+                margin: 0 2vw
+                
+@media( min-width: 1501px)
+    #conteudo
+        .titulo
+            margin:2vh 0
+        p
+            margin-bottom: 2.5vh
+
+        #descricaoProjecto
+            width: 30vw
+
+        #tecUsada
+            li
+                font-size: 2.7vw
+                margin: 0 2vw
+
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:800px )
+    .projectCard
+        width: 95vw
+        grid-template-columns: 45vw 48vw
+        column-gap: 3vw
+
+    #frames
+        background: url(../../assets/iframes/ipad.png) no-repeat
+        border-radius: 15px
+        box-shadow: 0 0 27px variables.$Cor1
+        background-size: min(48vw, 398px) auto
+        width: min(48vw, 398px)
+        max-height: 699px
+        position: relative
+        padding-top: calc(699 / 494 * 100%)
+
+        iframe
+            position: absolute
+            left: 50%
+            top: 50%
+            translate: (-49.8% -49.8%)
+            width: min(86%, 340px)
+            height: min(81%, 454px)
+
+    #conteudo
+        width: 45vw
+        align-self: center
+        p
+            font-size: 1.9vw 
+            display: block
+            margin: 1vh auto
+            width: 35vw
+        .titulo
+            display: block
+            text-align: center
+            margin-top: 2vh !important
+            margin-bottom: 2vh
+            padding: 0
+
+        button
+            font-size: 1.9vw !important
+        #tecUsada
+            li
+                font-size: 4.7vw
+                margin: 1vh 2vw
+
+@media( min-width: 801px) and (max-width:1028px )
+    .projectCard
+        grid-template-columns: 45vw 48vw
+        column-gap: 2vw
+
+    #frames
+        background: url(../../assets/iframes/ipad.png) no-repeat
+        border-radius: 15px
+        box-shadow: 0 0 27px variables.$Cor1
+        background-size: 100%
+        width: 398px
+        height: 350px
+        background-position: center
+
+
+        iframe
+            position: absolute
+            left: 50%
+            top: 50%
+            translate: (-49.8% -49.8%)
+            width: min(86%, 340px)
+            height: min(81%, 454px)
+
+    #conteudo
+        width: 45vw
+        align-self: center
+        p
+            font-size: 2vw 
+            display: block
+            margin: 1vh auto
+            width: 35vw
+        .titulo
+            display: block
+            text-align: center
+            margin-top: 2vh !important
+            margin-bottom: 2vh
+            padding: 0
+            font-size: 3.8vw
+
+        button
+            font-size: 1.9vw !important
+        #tecUsada
+            li
+                font-size: 4.7vw
+                margin: 1vh 2vw
+
+/*Para Telemovel*/
+@media( max-width:450px )
+    .projectCard
+        grid-template-columns: 40vw 55vw
+        column-gap: 0
+        overflow: hidden !important
+
+    #frames
+        display: flex
+        justify-content: center
+        align-content: center
+        padding-right: 30px
+        position: relative
+        background: url(../../assets/iframes/iphone.png) no-repeat
+        background-size: min(55vw, 450px) auto
+        background-position: center
+        height: 0
+        position: relative
+        padding-top: calc(1628 / 1076 * 100%)
+        overflow: hidden !important
+
+        iframe
+            position: absolute
+            left: 50%
+            top: 50%
+            translate: (-50% -52%)
+            width: min(66.5%, 340px)
+            height: min(94%, 454px)
+            border-radius: 30px
+            box-shadow: 0 0 47px variables.$Cor1
+            overflow: hidden !important
+
+    #conteudo
+        width: 42vw
+        overflow: hidden !important
+        p
+            text-align: center
+            width: 39vw
+            font-size: 2.3vw
+
+        .titulo
+            display: block
+            text-align: center
+            padding: 0
+            margin: 2vh 0 !important
+
+        #tecUsada
+            margin: 0 auto
+            justify-content: center
+            li
+                font-size: 6vw
+                margin: 0 2vw
+
+        #BtnVisit
+            padding: 10px

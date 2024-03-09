@@ -1,0 +1,94 @@
+@use 'variables'
+@use 'mixins'
+
+/*Geral*/
+#projects
+    scroll-snap-align: start
+    position: relative
+
+#projectsFinal
+    position: absolute
+    bottom: 1vh
+
+/*Dark Mode*/
+#dark #projects.dark
+    color: variables.$Cor2
+    .BtnVerTodos
+        @include mixins.BtnDark
+        border: none
+        position: absolute
+
+    .BtnVerTodos:hover
+        @include mixins.BtnHoverDark
+
+/*Light Mode*/
+#light  #projects
+    color: variables.$Cor1
+    .BtnVerTodos
+        @include mixins.BtnLight
+        border: none
+        position: absolute
+
+    .BtnVerTodos:hover
+        @include mixins.BtnHoverLight
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1500px )
+    .BtnVerTodos
+        margin-left: 1vw
+        padding: 5px 13px
+        bottom: 3.2vw
+        a
+            font-size: 1.7vw 
+
+    #projecstInicio
+        margin-bottom: -5vh
+
+@media( min-width: 1501px) 
+    .BtnVerTodos
+        margin-left: 1vw
+        padding: 5px 13px
+        bottom: 3vw
+        a
+            font-size: 1.2vw
+
+    #projecstInicio
+        margin-bottom: -5vh
+
+@media screen and (min-width: 1501px) and (min-aspect-ratio: 16/9) /* meu pc*/
+    #lastProject
+        scale: 0.9
+
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:800px )
+    .BtnVerTodos
+        margin-left: 1vw
+        padding: 5px 13px
+        bottom: 7vw
+        a
+            font-size: 3vw 
+
+    #projecstInicio
+            margin-bottom: -8vh
+
+@media( min-width: 801px) and (max-width:1028px )
+    .BtnVerTodos
+        margin-left: 1vw
+        padding: 5px 13px
+        bottom: 7.5vw
+        a
+            font-size: 3.2vw 
+
+    #projecstInicio
+        margin-bottom: -8vh
+
+/*Para Telemovel*/
+@media( max-width:450px )
+    .BtnVerTodos
+        margin-left: 1vw
+        padding: 5px 13px
+        bottom: 6.8vw
+        a
+            font-size: 3.9vw
+    #projecstInicio
+        margin-bottom: -8vh

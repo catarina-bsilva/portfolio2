@@ -1,0 +1,71 @@
+@use 'variables'
+
+/*Botões dark mode*/  
+@mixin BtnDark
+    background-color: variables.$Cor1
+    border: 3px solid variables.$Cor4
+    padding: 15px 15px
+    border-radius: 15px
+    color: variables.$Cor4
+    font-weight: bolder
+    margin-top: 20px
+    cursor: pointer
+
+@mixin BtnHoverDark
+    background-color: variables.$Cor4
+    border: 3px solid variables.$Cor1
+    color: variables.$Cor1
+
+@mixin BtnMiniDark
+    background-color: variables.$Cor1
+    border: none
+    color: variables.$Cor4
+    font-weight: bolder
+    cursor: pointer
+    display: inline
+
+@mixin BtnMiniHoverDark
+    color: variables.$Cor3
+
+/*Botões light mode*/
+
+@mixin BtnLight
+    background-color: variables.$Cor2
+    border: 3px solid variables.$Cor4
+    padding: 15px 15px
+    border-radius: 15px
+    color: variables.$Cor4
+    font-weight: bolder
+    margin-left: 15vw
+    margin-top: 20px
+    cursor: pointer
+
+@mixin BtnHoverLight
+    background-color: variables.$Cor4
+    border: 3px solid variables.$Cor2
+    color: variables.$Cor2
+
+@mixin BtnMiniLight
+    background-color: variables.$Cor2
+    border: none
+    color: variables.$Cor4
+    font-weight: bolder
+    cursor: pointer
+    display: inline
+
+@mixin BtnMiniHoverLight
+    color: variables.$Cor5
+
+/*Titulos*/
+
+@mixin TituloPagina
+    font-family: variables.$LetraMono
+    color: variables.$Cor4
+    padding-top: 20px
+    padding-left: 20px
+    font-weight: 200
+
+@mixin Titulo
+    padding-bottom: 10px
+    padding-top: 15px
+    text-align: center

@@ -1,0 +1,202 @@
+@use '../variables'
+@use '../mixins'
+
+/*Geral*/
+#containerMini
+    display: flex
+    flex-direction: column
+
+#frameMini
+    height:0
+    background-size: contain
+    position: relative
+
+.tituloMini
+    text-align: center
+    padding: 10px
+    margin-top: -4px
+
+/*Dark Mode*/
+#dark .tituloMini
+    color: variables.$Cor2
+
+#dark .BtnMini
+    @include mixins.BtnMiniDark
+
+#dark .BtnMini:hover
+    @include mixins.BtnMiniHoverDark
+
+/*Light Mode*/
+#light .tituloMini
+    color: variables.$Cor1
+
+#light .BtnMini
+    @include mixins.BtnMiniLight
+
+#light .BtnMini:hover
+    @include mixins.BtnMiniHoverLight
+
+/*Para PC*/
+@media( min-width: 1029px) and (max-width:1500px )
+    #containerMini
+        width: 23vw
+        display: flex
+        flex-direction: column
+        margin: 3px 9px
+
+    #frameMini
+        width: 23vw
+        padding-top: 54.39%
+        margin-bottom: -15px
+        background: url(../../assets/iframes/laptop.png) no-repeat
+        background-size: contain
+        position: relative
+
+    #fotoMini
+        width: 15vw
+        height:77%
+        position: absolute
+        top: 2.1vh
+        left: 4vw
+        visibility: hidden
+
+    .tituloMini
+        font-size: 1.6vw
+
+    .BtnMini
+        padding-bottom: 0.9vh
+        margin-top:-0.6vh
+        a
+            font-size: 1.3vw 
+
+@media( min-width: 1501px)
+    #containerMini
+        width: 23vw
+        display: flex
+        flex-direction: column
+        margin: 3px 9px
+
+    #frameMini
+        width: 23vw
+        padding-top: 54.39%
+        margin-bottom: -15px
+        background: url(../../assets/iframes/laptop.png) no-repeat
+        background-size: contain
+        position: relative
+
+    #fotoMini
+        width: 15vw
+        height:77%
+        position: absolute
+        top: 2.1vh
+        left: 4vw
+        visibility: hidden
+
+    .tituloMini
+        font-size: 1.5vw
+
+    .BtnMini
+        padding-bottom: 0.9vh
+        margin-top:-0.6vh
+        a
+            font-size: 1.2vw 
+            
+/*Para Tablet*/
+@media( min-width: 451px) and (max-width:800px )
+    #containerMini
+        min-height: 41vh
+        overflow: hidden
+
+    #frameMini
+        background: url(../../assets/iframes/ipad.png) no-repeat
+        border-radius: 15px
+        box-shadow: 0 0 27px variables.$Cor1
+        background-size: contain
+        width: 35vw
+        position: relative
+        padding-top: calc(699 / 494 * 100%)
+        margin-top:0.5vh
+
+    #fotoMini
+        width: 19.75vw
+        height:77%
+        position: absolute
+        top: 3.75vh
+        left: 1.725vw
+        visibility: hidden
+
+    .tituloMini
+        font-size: 2.9vw !important
+
+    .BtnMini
+        margin-top: 0
+        padding-bottom: 0.6vh
+        a
+            font-size: 2.5vw
+
+@media( min-width: 801px) and (max-width:1028px )
+    #frameMini
+        background: url(../../assets/iframes/ipad.png) no-repeat
+        border-radius: 15px
+        box-shadow: 0 0 27px variables.$Cor1
+        background-size: contain
+        width: 35vw
+        position: relative
+        padding-top: calc(699 / 494 * 100%)
+
+
+    #fotoMini
+        width: 19.75vw
+        height:77%
+        position: absolute
+        top: 3.75vh
+        left: 1.725vw
+        visibility: hidden
+
+    .tituloMini
+        font-size: 2.9vw !important
+
+    .BtnMini
+        margin-top: 0
+        padding-bottom: 0.6vh
+        a
+            font-size: 2.5vw
+
+    #containerMini
+        height: 36vh
+        overflow: hidden
+
+
+/*Para Telemovel*/
+@media( max-width:450px )
+    #containerMini
+        height: 29vh
+        margin-bottom: -3vh
+        overflow: hidden
+
+    #frameMini
+        background: url(../../assets/iframes/iphone.png) no-repeat
+        background-size: 23vw
+        background-position: center
+        position: relative
+        height: 0
+        padding-top: calc(1628 / 1076 * 100%)
+        margin-top:-2.5vh
+        overflow: hidden
+
+    #fotoMini
+        position: absolute
+        width: 15vw
+        visibility: hidden
+
+    .tituloMini
+        font-size: 2.4vw
+        overflow: hidden
+        line-height: 3.9vw
+
+    .BtnMini
+        margin-top:-1.6vh
+        overflow: hidden
+        a
+            font-size: 1.8vw
+            overflow: hidden
