@@ -2,10 +2,6 @@
 @use '../src/components/mixins'
 
 /*Geral*/
-:root
-    --main-bg-color: variables.$Cor1
-    --main-text-color: variables.$Cor2
-
 *
     padding: 0
     margin: 0
@@ -43,14 +39,14 @@ a
 
 /*Dark Mode*/
 #dark body
-    background-color: variables.$Cor1
+    background-color: variables.$Cor1 !important
 
 #dark header
-    background-color: variables.$Cor1
+    background-color: variables.$Cor1 !important
 
 #dark #containerMain
-    background-color: variables.$Cor1
-    color: variables.$Cor2
+    background-color: variables.$Cor1 !important
+    color: variables.$Cor2 !important
 
 #dark .Btn
     @include mixins.BtnDark
@@ -60,11 +56,11 @@ a
 
 /*Light Mode*/
 #light #containerMain
-    background-color: variables.$Cor2
-    color: variables.$Cor1
+    background-color: variables.$Cor2 !important
+    color: variables.$Cor1 !important
 
 #light  header
-    background-color: variables.$Cor2
+    background-color: variables.$Cor2 !important
 
 #light .Btn
     @include mixins.BtnLight
@@ -73,7 +69,7 @@ a
     @include mixins.BtnHoverLight
 
 #light body
-    background-color: variables.$Cor2
+    background-color: variables.$Cor2 !important
 
 /*Para PC*/
 @media( min-width: 1029px) and (max-width:1501px )
@@ -103,7 +99,6 @@ a
         a
             font-size: 4vw !important    
 
-    #ContactBtnContainer
     button
         font-size: 1.8vw !important
     a
