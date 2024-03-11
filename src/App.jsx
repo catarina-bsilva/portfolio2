@@ -3,6 +3,7 @@ import Header from './components/Header'
 import About from "./components/About"
 import Contacts from "./components/Contacts"
 import Projects from "./components/Projects"
+import ProjectsFinal from "./components/ProjectsFinal"
 import ProjectCard from "./components/projects/ProjectCard"
 import MiniProjectCard from "./components/projects/MiniProjectCard"
 import ProjectGeral from "./components/projects/ProjectGeral"
@@ -37,6 +38,7 @@ function App() {
             <Route path="*" element={<Main/>}/>
             <Route path="/About" element={<About/>} />
             <Route path="/Projects" element={<Projects/>} />
+            <Route path="/ProjectsFinal" element={<ProjectsFinal/>} />
             <Route path="/Contacts" element={<Contacts/>} />
             <Route path="/ProjectGeral" element={<ProjectGeral/>} />
             <Route path="/ProjectCard" element={<ProjectCard/>} />

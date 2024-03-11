@@ -25,7 +25,7 @@ const ProjectCard = ({nome, link, foto, key, id}) => {
   const fromMiniCard = searchParams.get('fromMiniCard')
 
   return (
-    <div className={`dark projectCard ${fromMiniCard ? 'individual' : ''}`}>
+    <div className={`dark projectCard ${fromMiniCard ? 'individual' : ''}`} id='projectCardContainer'>
       <div id="conteudo">
         {/* Titulo do Projecto */}
         <h2 className='titulo'>{nome || nomeParam}</h2>
