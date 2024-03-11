@@ -26,6 +26,9 @@ function App() {
   const toggleLanguagePT = () => setLanguage("portuguese")
   const toggleLanguageDE = () => setLanguage("german")
 
+  if (navigator.userAgent.includes("SamsungBrowser")) {
+    document.body.classList.add("samsung-internet");
+  }
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <LanguageContext.Provider value={{language, toggleLanguageEN, toggleLanguagePT, toggleLanguageDE}}>
