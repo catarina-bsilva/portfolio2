@@ -1,6 +1,9 @@
 @use '../src/components/variables'
 @use '../src/components/mixins'
 
+:root
+    --cor-d: #191919
+    --cor-l: #f6f6f6
 /*Geral*/
 *
     padding: 0
@@ -39,14 +42,14 @@ a
 
 /*Dark Mode*/
 #dark body
-    background-color: variables.$Cor1 !important
+    background-color: var(--cor-d)
 
 #dark header
-    background-color: variables.$Cor1 !important
+    background-color: var(--cor-d) 
 
 #dark #containerMain
-    background-color: variables.$Cor1 !important
-    color: variables.$Cor2 !important
+    background-color: var(--cor-d) 
+    color: var(--cor-l)
 
 #dark .Btn
     @include mixins.BtnDark
@@ -54,14 +57,24 @@ a
 #dark .Btn:hover
     @include mixins.BtnHoverDark
 
+#dark .BtnVerTodos
+    @include mixins.BtnDark
+    border: none
+#dark .BtnVerTodos:hover
+    @include mixins.BtnHoverDark
+
 /*Light Mode*/
 #light #containerMain
-    background-color: variables.$Cor2 !important
-    color: variables.$Cor1 !important
+    background-color: var(--cor-l)
+    color: var(--cor-d)
 
 #light  header
-    background-color: variables.$Cor2 !important
-
+    background-color: var(--cor-l)
+#light .BtnVerTodos
+    @include mixins.BtnLight
+    border: none
+#light .BtnVerTodos:hover
+    @include mixins.BtnHoverLight
 #light .Btn
     @include mixins.BtnLight
 
@@ -69,7 +82,7 @@ a
     @include mixins.BtnHoverLight
 
 #light body
-    background-color: variables.$Cor2 !important
+    background-color: var(--cor-l)
 
 /*Para PC*/
 @media( min-width: 1029px) and (max-width:1501px )
