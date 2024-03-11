@@ -68,9 +68,12 @@ const MiniProjectCard = ({nome, link, foto, key, id}) => {
       </button>
 
       {/* Frame */}
-      <div id="frameMini">
-        <img src={getImagePath(foto)} alt="foto projecto" id='fotoMini' />
-      </div>
+      <Link to={`/ProjectCard?id=${id}&nome=${nome}&link=${link}&foto=${foto}&fromMiniCard=true`}>
+        <div id="frameMini">
+          <img src={getImagePath(foto)} alt="foto projecto" id='fotoMini' /> 
+        </div>
+        </Link>
+      
     </div>
   )
 }
