@@ -1,13 +1,12 @@
-import React from 'react'
+
 import { useContext } from 'react'
 
 import { BsGit, BsBootstrap } from 'react-icons/bs'
 import { FaSass, FaHtml5, FaCss3Alt, FaVuejs, FaReact } from 'react-icons/fa'
 import { DiJavascript1 } from 'react-icons/di'
+import { SiTypescript } from "react-icons/si"
 
 import { LanguageContext } from '../context'
-
-import Projects from "./Projects"
 
 import CVEN from '../assets/CV/CVEN.pdf'
 import CVPT from '../assets/CV/CVPT.pdf'
@@ -22,7 +21,7 @@ const About = () => {
    const ScrollToProjects = () => {
       const element = document.getElementById('ProjectsComponent');
       element.scrollIntoView({ behavior: 'smooth' })
-      setShowMenu(false)
+
       }
 
   return (
@@ -36,7 +35,7 @@ const About = () => {
       <h2 className='titulo' id='primTitulo'>
          {language === "english" ? "About me" : language === "portuguese" ? "Sobre mim" : language === "german" ? "Über mich" : ""}
       </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium aut neque impedit eaque quibusdam maiores. Iste esse sunt perferendis, ut quam, repellat ipsa voluptatibus deleniti aut veritatis explicabo libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium aut neque impedit eaque quibusdam maiores. Iste esse sunt perferendis, ut quam, repellat ipsa voluptatibus deleniti aut veritatis explicabo libero.</p>
+      <p>{language === "english" ? "Hello! I'm Catarina, a passionate Front-End Developer with two years of experience. I specialize in HTML, CSS, JavaScript, and React, and also have experience with Vue, TypeScript, SASS, and Bootstrap. I'm dedicated to creating dynamic and user-friendly web applications and am currently seeking my first professional role to contribute and grow as a developer." : language === "portuguese" ? "Olá! Sou a Catarina, uma Desenvolvedora Front-End apaixonada com dois anos de experiência. Especializo-me em HTML, CSS, JavaScript e React, e também tenho experiência com Vue, TypeScript, SASS e Bootstrap. Estou dedicada a criar aplicações web dinâmicas e amigáveis e, atualmente, estou à procura do meu primeiro emprego profissional para contribuir e crescer como desenvolvedora." : language === "german" ? "Hallo! Ich bin Catarina, eine leidenschaftliche Front-End-Entwicklerin mit zwei Jahren Erfahrung. Ich spezialisiere mich auf HTML, CSS, JavaScript und React und habe auch Erfahrung mit Vue, TypeScript, SASS und Bootstrap. Ich bin engagiert, dynamische und benutzerfreundliche Webanwendungen zu erstellen, und suche derzeit meine erste professionelle Stelle, um als Entwicklerin beizutragen und zu wachsen.h" : ""}</p>
 
       {/* Tecnologias */}
       <h2 className='titulo'>
@@ -49,6 +48,8 @@ const About = () => {
         <li id='React'><FaReact/></li>
         <li id='Sass'><FaSass/></li>
         <li id='Bootstrap'><BsBootstrap/></li>
+        <li id='Vue'><FaVuejs/></li>
+        <li id='Typescript'><SiTypescript /></li>
         <li id='Git' className='dark'><BsGit/></li>
       </ul>
 
@@ -56,9 +57,9 @@ const About = () => {
       <h2 className='titulo'>
          {language === "english" ? "Working on..." : language === "portuguese" ? "Trabalhando em..." : language === "german" ? "In Arbeit..." : ""}
       </h2>
-      <p>{language === "english" ? "Currently i'm learning VueJs and i'm working on new personal projects" :
-         language === "portuguese" ? "Atualmente, estou a aprender VueJs e estou a trabalhar em novos projetos pessoais." :
-         language === "german" ? "Derzeit lerne ich VueJs und arbeite an neuen persönlichen Projekten." : ""}
+      <p>{language === "english" ? "Currently i'm learning Angular and i'm working on new personal projects" :
+         language === "portuguese" ? "Atualmente, estou a aprender Angular e estou a trabalhar em novos projetos pessoais." :
+         language === "german" ? "Derzeit lerne ich Angular und arbeite an neuen persönlichen Projekten." : ""}
       </p>
 
       {/* Download CV */}

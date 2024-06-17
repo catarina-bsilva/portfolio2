@@ -1,4 +1,3 @@
-import React from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -21,7 +20,8 @@ const ProjectGeral = () => {
       <div id='containerProjectGeral' className='dark'>
         {/* Mapa de Projectos */}
         {Projectos.map((projeto) =>
-          <MiniProjectCard nome={projeto.name} link={projeto.Link} foto={projeto.FotoPrincipal} key={projeto.id} id={projeto.id} className="MiniProjectCard"/>
+          <MiniProjectCard className="MiniProjectCard" key={projeto.id} id={projeto.id}
+          nome={projeto.name} link={projeto.Link} descricaoEN={projeto.descriçãoEN} descricaoPT={projeto.descriçãoPT} descricaoDE={projeto.descriçãoDE} tecnologias={projeto.tecnologias} FotoPrincipalPC={projeto.FotoPrincipalPC} FotoPrincipalTABLET={projeto.FotoPrincipalTABLET} FotoPrincipalTLM={projeto.FotoPrincipalTLM}/>
         )}
 
         {/* Botão Back */}
