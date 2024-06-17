@@ -25,6 +25,7 @@ const Main = () => {
         <ProjectCard nome={Projectos[3].name} link={Projectos[3].Link} descricaoEN={Projectos[3].descriçãoEN} descricaoPT={Projectos[3].descriçãoPT} descricaoDE={Projectos[3].descriçãoDE} tecnologias={Projectos[3].tecnologias}/>
         <ProjectsFinal/>
       </div>
+      
       <Contacts/>
     </div>
   )

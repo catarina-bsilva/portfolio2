@@ -72,7 +72,7 @@ const MiniProjectCard = ({ nome, link, FotoPrincipalPC, FotoPrincipalTABLET, Fot
     const handleResize = () => {
       if (window.innerWidth <= 450) {
         setDeviceType('TLM');
-      } else if (window.innerWidth <= 1024) {
+      } else if (window.innerWidth <= 1028) {
         setDeviceType('TABLET');
       } else {
         setDeviceType('PC');

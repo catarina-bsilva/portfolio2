@@ -70,7 +70,7 @@ const Contacts = () => {
         {/* Container Email e Telefone */}
         <div id="ContactBtnContainer">
           <button id='email' className='Btn dark' onClick={CopyEmail}>work@catarinasilva.com <BiCopy/></button>
-          <button id='telefone' className='Btn dark' onClick={CopyTelefone}>+41768154802 <BiCopy/></button>
+          <button id='telefone' className='Btn dark' onClick={CopyTelefone}>+41795547323 <BiCopy/></button>
         </div>
       </div>
 
