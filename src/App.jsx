@@ -32,7 +32,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <LanguageContext.Provider value={{language, toggleLanguageEN, toggleLanguagePT, toggleLanguageDE}}>
-      <BrowserRouter basename='/portfolio2'>
+      <BrowserRouter>
         <div id={theme}>
           <header className={theme} >
             <Header/>

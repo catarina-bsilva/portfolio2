@@ -1,15 +1,15 @@
 [
     {
         "id": 1 ,
-        "name": "Little Lemon" ,
+        "name": "ConvertAll" ,
         "FotoPrincipalPC":"Projecto1PrincipalPC.png"  ,
         "FotoPrincipalTABLET":"Projecto1PrincipalTABLET.png"  ,
         "FotoPrincipalTLM":"Projecto1PrincipalTLM.png"  ,
-        "Link": "https://catarina-bsilva.github.io/little-lemon-app/",
-        "descriçãoEN": "A website for the fictional restaurant Little Lemon, featuring the menu, reservations and information about the team and the restaurant's history.",
-        "descriçãoPT": "Um site para o restaurante fictício Little Lemon, apresentando o menu, reservas e informações sobre a equipe e história do restaurante.",
-        "descriçãoDE": "Eine Website für das fiktive Restaurant Little Lemon, mit Menü, Reservierungen und Informationen über das Team und die Geschichte des Restaurants.",
-        "tecnologias": "Html, Css, JavaScript, React"
+        "Link": "https://convert-all.net/",
+        "descriçãoEN": "ConvertAll is a versatile online tool for unit conversion. It allows conversions between various measurement units in different categories such as length, mass, time, temperature, and more.",
+        "descriçãoPT": "ConvertAll é uma ferramenta online versátil para conversão de unidades. Permite a conversão entre diversas unidades de medida em diferentes categorias como comprimento, massa, tempo, temperatura e muito mais.",
+        "descriçãoDE": "ConvertAll ist ein vielseitiges Online-Tool zur Einheitenumrechnung. Es ermöglicht Umrechnungen zwischen verschiedenen Maßeinheiten in verschiedenen Kategorien wie Länge, Masse, Zeit, Temperatur und mehr.",
+        "tecnologias": "Html, Css, JavaScript, Vue, Bootstrap"
     },
     {
         "id": 2,
@@ -25,10 +25,22 @@
     },
     {
         "id": 3 ,
-        "name": "(Un)Healthy" ,
+        "name": "Macklib" ,
         "FotoPrincipalPC":"Projecto3PrincipalPC.png"  ,
         "FotoPrincipalTABLET":"Projecto3PrincipalTABLET.png"  ,
         "FotoPrincipalTLM":"Projecto3PrincipalTLM.png"  ,
+        "Link": "https://catarina-bsilva.github.io/macklib/",
+        "descriçãoEN": "Macklib is a Sass library that includes various predefined styles, as well as a collection of colors, palettes, and font families.",
+        "descriçãoPT": "Macklib é uma biblioteca Sass que inclui vários estilos predefinidos, bem como uma coleção de cores, paletas e fontes. ",
+        "descriçãoDE": "Macklib ist eine Sass-Bibliothek, die verschiedene vordefinierte Stile sowie eine Sammlung von Farben, Paletten und Schriftarten umfasst. ",
+        "tecnologias": "Html, Css, JavaScript, React, Sass"
+    },
+    {
+        "id": 4 ,
+        "name": "(Un)Healthy" ,
+        "FotoPrincipalPC":"Projecto4PrincipalPC.png"  ,
+        "FotoPrincipalTABLET":"Projecto4PrincipalTABLET.png"  ,
+        "FotoPrincipalTLM":"Projecto4PrincipalTLM.png"  ,
         "Link": "https://catarina-bsilva.github.io/unhealthy-restaurant/",
         "descriçãoEN": "A sample website for a restaurant with healthy and unhealthy menus, where customers can place orders and the kitchen can manage and update the status of each order.",
         "descriçãoPT": "Um site de exemplo para um restaurante com menus saudáveis e não saudáveis, onde os clientes podem fazer pedidos e a cozinha pode gerir e alterar o estado de cada pedido.",
@@ -36,11 +48,11 @@
         "tecnologias": "Html, Css, JavaScript, React, Sass"
     },
     {
-        "id": 4 ,
+        "id": 5 ,
         "name": "FilmesDB" ,
-        "FotoPrincipalPC":"Projecto4PrincipalPC.png"  ,
-        "FotoPrincipalTABLET":"Projecto4PrincipalTABLET.png"  ,
-        "FotoPrincipalTLM":"Projecto4PrincipalTLM.png"  ,
+        "FotoPrincipalPC":"Projecto5PrincipalPC.png"  ,
+        "FotoPrincipalTABLET":"Projecto5PrincipalTABLET.png"  ,
+        "FotoPrincipalTLM":"Projecto5PrincipalTLM.png"  ,
         "Link": "https://catarina-bsilva.github.io/FilmesDB/",
         "descriçãoEN": "An application for viewing and searching for movie information, including details such as cast, synopsis, and reviews.",
         "descriçãoPT": "Uma aplicação para visualização e busca de informações sobre filmes, incluindo detalhes como elenco, sinopse e avaliações.",
@@ -48,28 +60,16 @@
         "tecnologias": "Html, Css, JavaScript, React"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Amy" ,
-        "FotoPrincipalPC":"Projecto5PrincipalPC.png"  ,
-        "FotoPrincipalTABLET":"Projecto5PrincipalTABLET.png"  ,
-        "FotoPrincipalTLM":"Projecto5PrincipalTLM.png"  ,
+        "FotoPrincipalPC":"Projecto6PrincipalPC.png"  ,
+        "FotoPrincipalTABLET":"Projecto6PrincipalTABLET.png"  ,
+        "FotoPrincipalTLM":"Projecto6PrincipalTLM.png"  ,
         "Link": "https://catarina-bsilva.github.io/amy-restaurant/",
         "descriçãoEN": "A website for the Amy restaurant, highlighting the menu, reservations and special events.",
         "descriçãoPT": "Um site para o restaurante Amy, destacando o menu, reservas e eventos especiais.",
         "descriçãoDE": "Eine Website für das Restaurant Amy, die das Menü, Reservierungen und besondere Veranstaltungen hervorhebt.",
         "tecnologias": "Html, Css, JavaScript, React, Sass"
-    },
-    {
-        "id": 6,
-        "name": "Make your Burger" ,
-        "FotoPrincipalPC":"Projecto6PrincipalPC.png"  ,
-        "FotoPrincipalTABLET":"Projecto6PrincipalTABLET.png"  ,
-        "FotoPrincipalTLM":"Projecto6PrincipalTLM.png"  ,
-        "Link": "https://github.com/catarina-bsilva",
-        "descriçãoEN": "An application where customers can customize their burgers by choosing ingredients, bread type, and meat, also allowing the kitchen to manage and update the status of each order.",
-        "descriçãoPT": "Uma aplicação onde os clientes podem personalizar seus hambúrgueres, escolhendo ingredientes, tipo de pão e de carne, permitindo também que a cozinha gerencie e atualize o estado de cada pedido.",
-        "descriçãoDE": "Eine Anwendung, bei der Kunden ihre Burger durch Auswahl von Zutaten, Brotsorte und Fleisch anpassen können und die Küche den Status jeder Bestellung verwalten und aktualisieren kann.",
-        "tecnologias": "Html, Css, JavaScript, Vue"
     },
     {
         "id": 7,
@@ -84,15 +84,15 @@
         "tecnologias": "Html, Css, JavaScript, React"
     },
     {
-        "id": 8,
-        "name": "Quiz" ,
+        "id": 8 ,
+        "name": "Little Lemon" ,
         "FotoPrincipalPC":"Projecto8PrincipalPC.png"  ,
         "FotoPrincipalTABLET":"Projecto8PrincipalTABLET.png"  ,
         "FotoPrincipalTLM":"Projecto8PrincipalTLM.png"  ,
-        "Link": "https://github.com/catarina-bsilva",
-        "descriçãoEN": "",
-        "descriçãoPT": "",
-        "descriçãoDE": "",
+        "Link": "https://catarina-bsilva.github.io/little-lemon-app/",
+        "descriçãoEN": "A website for the fictional restaurant Little Lemon, featuring the menu, reservations and information about the team and the restaurant's history.",
+        "descriçãoPT": "Um site para o restaurante fictício Little Lemon, apresentando o menu, reservas e informações sobre a equipe e história do restaurante.",
+        "descriçãoDE": "Eine Website für das fiktive Restaurant Little Lemon, mit Menü, Reservierungen und Informationen über das Team und die Geschichte des Restaurants.",
         "tecnologias": "Html, Css, JavaScript, React"
     }
   ]
