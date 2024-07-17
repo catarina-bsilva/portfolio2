@@ -38,7 +38,8 @@ const ProjectCard = ({nome, link, FotoPrincipalPC, FotoPrincipalTABLET, FotoPrin
     React: <FaReact />,
     Sass: <FaSass />,
     TypeScript: <SiTypescript/>,
-    Vue: <FaVuejs/>
+    Vue: <FaVuejs/>,
+    Bootstrap: <BsBootstrap/>
   };
 
 

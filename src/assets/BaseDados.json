@@ -6,9 +6,9 @@
         "FotoPrincipalTABLET":"Projecto1PrincipalTABLET.png"  ,
         "FotoPrincipalTLM":"Projecto1PrincipalTLM.png"  ,
         "Link": "https://convert-all.net/",
-        "descriçãoEN": "ConvertAll is a versatile online tool for unit conversion. It allows conversions between various measurement units in different categories such as length, mass, time, temperature, and more.",
-        "descriçãoPT": "ConvertAll é uma ferramenta online versátil para conversão de unidades. Permite a conversão entre diversas unidades de medida em diferentes categorias como comprimento, massa, tempo, temperatura e muito mais.",
-        "descriçãoDE": "ConvertAll ist ein vielseitiges Online-Tool zur Einheitenumrechnung. Es ermöglicht Umrechnungen zwischen verschiedenen Maßeinheiten in verschiedenen Kategorien wie Länge, Masse, Zeit, Temperatur und mehr.",
+        "descriçãoEN": "Versatile online tool for unit conversion. It allows conversions between various measurement units in different categories such as length, mass, time, temperature, and more.",
+        "descriçãoPT": "Ferramenta online versátil para conversão de unidades. Permite a conversão entre diversas unidades de medida em diferentes categorias como comprimento, massa, tempo, temperatura e muito mais.",
+        "descriçãoDE": "Vielseitiges Online-Tool zur Einheitenumrechnung. Es ermöglicht Umrechnungen zwischen verschiedenen Maßeinheiten in verschiedenen Kategorien wie Länge, Masse, Zeit, Temperatur und mehr.",
         "tecnologias": "Html, Css, JavaScript, Vue, Bootstrap"
     },
     {
@@ -30,9 +30,9 @@
         "FotoPrincipalTABLET":"Projecto3PrincipalTABLET.png"  ,
         "FotoPrincipalTLM":"Projecto3PrincipalTLM.png"  ,
         "Link": "https://catarina-bsilva.github.io/macklib/",
-        "descriçãoEN": "Macklib is a Sass library that includes various predefined styles, as well as a collection of colors, palettes, and font families.",
-        "descriçãoPT": "Macklib é uma biblioteca Sass que inclui vários estilos predefinidos, bem como uma coleção de cores, paletas e fontes. ",
-        "descriçãoDE": "Macklib ist eine Sass-Bibliothek, die verschiedene vordefinierte Stile sowie eine Sammlung von Farben, Paletten und Schriftarten umfasst. ",
+        "descriçãoEN": "Sass library that includes various predefined styles, as well as a collection of colors, palettes, and font families.",
+        "descriçãoPT": "Biblioteca Sass que inclui vários estilos predefinidos, bem como uma coleção de cores, paletas e fontes. ",
+        "descriçãoDE": "Sass-Bibliothek, die verschiedene vordefinierte Stile sowie eine Sammlung von Farben, Paletten und Schriftarten umfasst. ",
         "tecnologias": "Html, Css, JavaScript, React, Sass"
     },
     {
