@@ -21,7 +21,7 @@ const Main = () => {
       <div id="thirdProject" className="cardProject" >
         <ProjectCard nome={Projectos[2].name} link={Projectos[2].Link} descricaoEN={Projectos[2].descriçãoEN} descricaoPT={Projectos[2].descriçãoPT} descricaoDE={Projectos[2].descriçãoDE} tecnologias={Projectos[2].tecnologias}/>
       </div>
-      <div id="forthProject" className="cardProject" >
+      <div id="fourthProject" className="cardProject" >
         <ProjectCard nome={Projectos[3].name} link={Projectos[3].Link} descricaoEN={Projectos[3].descriçãoEN} descricaoPT={Projectos[3].descriçãoPT} descricaoDE={Projectos[3].descriçãoDE} tecnologias={Projectos[3].tecnologias}/>
       </div>
       <div id="lastProject" className="cardProject" >
